@@ -67,13 +67,29 @@
             .navlinks a:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
             .navlinks a.active { background: rgba(255, 255, 255, 0.20); color: #fff; }
             .navlinks form { margin: 0; }
+            .navlinks .btn {
+                background: transparent;
+                border: 0;
+                color: rgba(255, 255, 255, 0.88);
+                padding: 6px 8px;
+                border-radius: 10px;
+                box-shadow: none;
+                transform: none;
+            }
+            .navlinks .btn:hover { background: rgba(255, 255, 255, 0.14); color: #fff; box-shadow: none; transform: none; }
+            .navlinks .btn:active { filter: none; }
 
             body {
                 margin: 0;
                 font-family: "Instrument Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-                background: radial-gradient(900px 420px at 15% 0%, rgba(59, 130, 246, 0.20), rgba(255, 255, 255, 0)) ,
-                            radial-gradient(900px 420px at 85% 0%, rgba(168, 85, 247, 0.20), rgba(255, 255, 255, 0)) ,
-                            var(--bg);
+                min-height: 100vh;
+                background:
+                    radial-gradient(1200px 600px at 10% -10%, rgba(59, 130, 246, 0.22), rgba(255, 255, 255, 0) 60%),
+                    radial-gradient(1200px 600px at 90% -10%, rgba(168, 85, 247, 0.22), rgba(255, 255, 255, 0) 60%),
+                    radial-gradient(1200px 600px at 50% 110%, rgba(59, 130, 246, 0.10), rgba(255, 255, 255, 0) 60%),
+                    var(--bg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 color: var(--text);
             }
             .container { max-width: 1100px; margin: 0 auto; padding: 28px 18px; }
